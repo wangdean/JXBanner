@@ -120,7 +120,7 @@ public class JXBaseBanner: UIView {
 
     public var curIndex: Int {
         get {
-            currentIndexPath.row
+            currentIndexPath.row % kMultiplier % pageCount
         }
     }
     
