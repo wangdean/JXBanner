@@ -118,6 +118,12 @@ public class JXBaseBanner: UIView {
     
     var params: JXBannerParams = JXBannerParams()
 
+    public var curIndex: Int {
+        get {
+            currentIndexPath.row
+        }
+    }
+    
     /// The IndexPath of the item in the middle of the bannerview
     var currentIndexPath: IndexPath = IndexPath(row: 0, section: 0) {
         didSet { setCurrentIndex() }
